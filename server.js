@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -12,6 +13,6 @@ app.set("view engine", "handlebars");
 //require("./routes/apiRoutes.js")(app);
 //require("./routes/htmlRoutes.js")(app);
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log("🌎 DO I LOVE " + PORT + " OR WHAT?!?🌎");
 });
