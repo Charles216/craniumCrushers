@@ -9,13 +9,28 @@ CREATE TABLE cost_of_election (
     PRIMARY KEY (CYCLE) NOT NULL
 );
 
-INSERT INTO cost_of_election VALUES
-('2016*',   '$6.444.253.265',	'$3.076.968.576',	'$3.078.629.166'),	
-('2014',	'$3.921.590.197',	'$1.788.104.441',	'$1.846.074.020'),	
-('2012*',	'$6.609.557.743',	'$2.930.193.516',	'$3.413.160.735'),	
-('2010',	'$4.020.984.328',	'$1.867.391.527',	'$1.894.664.436'),	
-('2008*',	'$5.927.046.595',	'$3.370.847.876',	'$2.511.143.396'),	
-('2006',	'$3.416.234.314',	'$1.628.828.804',	'$1.730.257.475'),	
-('2004*',	'$5.300.543.183',	'$2.743.838.776',	'$2.509.383.606'),	
-('2002',	'$2.927.842.804',	'$1.311.201.258',	'$1.587.943.275'),	
-('2000*',	'$4.321.482.961',	'$1.839.315.316',	'$2.330.564.834');	
+create table interestGroupName (
+    groupId INT auto_increment not null primary key,
+    rank INT unsigned NOT NULL,
+    interest_group varchar(225) not null,
+    total_donated INT(20) unsigned not null ,
+    demPCT int(2) unsigned not null,
+    repPct int(2) unsigned not null,
+    year_id int(5),
+    name_id int(5),
+    FOREIGN KEY (year_id)
+    REFERENCES interestGroupYears(year_id),
+    FOREIGN KEY (name_id)
+    REFERENCES topRecipient(name_id)
+);
+
+create table interestGroupYears (
+    year_id INT auto_increment not null,
+    year int not null,
+    primary key (year_id)
+);
+
+create table topRecipient (
+    name_id int(5) not null auto_increment primary key,
+    name varchar(255) not null
+);
