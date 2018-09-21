@@ -95,7 +95,7 @@ values
 insert into cycle2014
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
-    ("Cameron, Ronnie", "Mountaire Corp", "North Little Rock, AZ	", 500300, 0, 100);
+    ("Cameron, Ronnie", "Mountaire Corp", "North Little Rock, AZ", 500300, 0, 100);
 insert into cycle2014
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
@@ -412,4 +412,211 @@ where contributor_id = 9;
 
 update cycle2010
 set contributor_name = "Pamela S. Deal"
+where contributor_id = 10;
+----------------------------------------------------------------------------------
+--ADD DATA TO DISLPAY NAME COLUMN
+--display names for cycle2018
+----------------------------------------------------------------------------------
+update cycle2018
+set display_name = "Sussman"
+where contributor_id = 1;
+
+update cycle2018
+set display_name = "Simon"
+where contributor_id = 2;
+
+update cycle2018
+set display_name = "Skjodt"
+where contributor_id = 3;
+
+update cycle2018
+set display_name = "Schwab"
+where contributor_id = 4;
+
+update cycle2018
+set display_name = "Lindberg"
+where contributor_id = 5;
+
+update cycle2018
+set display_name = "Mercer"
+where contributor_id = 6;
+
+update cycle2018
+set display_name = "Joyce"
+where contributor_id = 7;
+
+update cycle2018
+set display_name = "Eychaner"
+where contributor_id = 8;
+
+update cycle2018
+set display_name = "Wright"
+where contributor_id = 9;
+
+update cycle2018
+set display_name = "Simons"
+where contributor_id = 10;
+
+--display names for cycle2016
+update cycle2016
+set display_name = "Adelson"
+where contributor_id = 1;
+
+update cycle2016
+set display_name = "Eychaner"
+where contributor_id = 2;
+
+update cycle2016
+set display_name = "Pritzker"
+where contributor_id = 3;
+
+update cycle2016
+set display_name = "Sussman"
+where contributor_id = 4;
+
+update cycle2016
+set display_name = "Singer"
+where contributor_id = 5;
+
+update cycle2016
+set display_name = "Griffin "
+where contributor_id = 6;
+
+update cycle2016
+set display_name = "Wright"
+where contributor_id = 7;
+
+update cycle2016
+set display_name = "Uihlein"
+where contributor_id = 8;
+
+update cycle2016
+set display_name = "Schwab"
+where contributor_id = 9;
+
+update cycle2016
+set display_name = "Foster"
+where contributor_id = 10;
+
+--display names for cycle 2014
+update cycle2014
+set display_name = "Singer"
+where contributor_id = 1;
+
+update cycle2014
+set display_name = "Clark"
+where contributor_id = 2;
+
+update cycle2014
+set display_name = "Cameron"
+where contributor_id = 3;
+
+update cycle2014
+set display_name = "Hillman"
+where contributor_id = 4;
+
+update cycle2014
+set display_name = "Laufer"
+where contributor_id = 5;
+
+update cycle2014
+set display_name = "Schwab"
+where contributor_id = 6;
+
+update cycle2014
+set display_name = "Childs"
+where contributor_id = 7;
+
+update cycle2014
+set display_name = "Groff"
+where contributor_id = 8;
+
+update cycle2014
+set display_name = "Isaac"
+where contributor_id = 9;
+
+update cycle2014
+set display_name = "Sussman"
+where contributor_id = 10;
+
+--display names for cycle2012
+update cycle2012
+set display_name = "Munger"
+where contributor_id = 1;
+
+update cycle2012
+set display_name = "Clark"
+where contributor_id = 2;
+
+update cycle2012
+set display_name = "Bowers"
+where contributor_id = 3;
+
+update cycle2012
+set display_name = "Schwab"
+where contributor_id = 4;
+
+update cycle2012
+set display_name = "Oden"
+where contributor_id = 5;
+
+update cycle2012
+set display_name = "Canning"
+where contributor_id = 6;
+
+update cycle2012
+set display_name = "Kamen"
+where contributor_id = 7;
+
+update cycle2012
+set display_name = "Hurt"
+where contributor_id = 8;
+
+update cycle2012
+set display_name = "Tibbs"
+where contributor_id = 9;
+
+update cycle2012
+set display_name = "Uihlein"
+where contributor_id = 10;
+
+--display names for cycle2010
+update cycle2010
+set display_name = "Berger"
+where contributor_id = 1;
+
+update cycle2010
+set display_name = "Oden"
+where contributor_id = 2;
+
+update cycle2010
+set display_name = "Bowers"
+where contributor_id = 3;
+
+update cycle2010
+set display_name = "Lord"
+where contributor_id = 4;
+
+update cycle2010
+set display_name = "Stai"
+where contributor_id = 5;
+
+update cycle2010
+set display_name = "Perry"
+where contributor_id = 6;
+
+update cycle2010
+set display_name = "Perry"
+where contributor_id = 7;
+
+update cycle2010
+set display_name = "Eychaner"
+where contributor_id = 8;
+
+update cycle2010
+set display_name = "Herro"
+where contributor_id = 9;
+
+update cycle2010
+set display_name = "Deal"
 where contributor_id = 10;
