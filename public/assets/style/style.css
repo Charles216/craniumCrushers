@@ -64,24 +64,23 @@ a {
 }
 
 /* Footer Style */
-.redfooter {
+.bluefooter {
     /* Shaping */
     flex-shrink: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 
     /* Color*/
-    background-color:rgba(142, 7, 7, 0.75); 
+    background-color:rgba(6, 11, 96, 0.75);
     border-top: 1px solid #000;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
 }
 
-.bluefooter {
+.redfooter {
     flex-shrink: 0;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    background-color: rgba(6, 11, 96, 0.75);
+    height: 10px;
+    background-color: rgba(142, 7, 7, 0.75); 
 }
 
 .footertext {
