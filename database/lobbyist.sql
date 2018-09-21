@@ -12,7 +12,6 @@ insert into interestGroupYears values
 (2002),
 (2000);
 
-
 insert into topRecipient (name) values
 ('Claire McCaskill (D-Mo)'),
 ('Ted Cruz (R-Texas)'),
@@ -49,7 +48,7 @@ insert into topRecipient (name) values
 ('Roy Blunt (R-Mo)'),   
 ('Gerry Connolly (D-Va)'),
 ('Barack Obama (D)'),
-('John McCain (R)')
+('John McCain (R)'),
 ('Hillary Clinton (D-NY)'),
 ('Saxby Chambliss (R-Ga)'),
 ('Joe Lieberman (I-Conn)'),
@@ -70,7 +69,8 @@ insert into topRecipient (name) values
 
 insert into interestGroupName (rank, interest_group, total_donated, demPCT,repPCT, year_id, name_id)
 values
---2018
+-- 2018
+(1, 'Lawyers/Law Firms', 64577411, 77, 23, 1, 1),
 (2,	'Retired', 59168252, 54, 44, 1, 2),
 (3,	'Securities/Invest', 49933256,	54,	46, 1, 1),
 (4,	'Real Estate',	41328934, 52, 47, 1, 3),
@@ -79,8 +79,8 @@ values
 (7,	'Insurance', 30227987, 40, 59, 1, 3),
 (8,	'Democratic/Liberal', 26793098,	97,	0, 1, 5),
 (9,	'Lobbyists', 19929289, 44, 55, 1, 6),
-(10, 'Pharm/Health Prod', 18501794, 46,	54,	1, 6);
---2016
+(10, 'Pharm/Health Prod', 18501794, 46,	54,	1, 6),
+-- 2016
 (1,	'Retired', 88210937, 27, 73, 2, 7),
 (2,	'Securities/Invest', 63142305, 34, 66, 2, 8),
 (3,	'Lawyers/Law Firms', 62789861,	56,	44, 2, 9),
@@ -101,7 +101,7 @@ values
 (7, 'Insurance', 32976700, 38, 61, 3, 17),
 (8, 'Oil & Gas', 25992121, 16, 84, 3, 18),
 (9, 'Lobbyists', 21034139, 49, 51, 3, 17),
-(10, 'Pharm/Health Prod', 19771878,	45,	55, 3, 17);
+(10, 'Pharm/Health Prod', 19771878,	45,	55, 3, 17),
 -- 2012
 (1, 'Lawyers/Law Firms', 56228212, 71, 29, 4, 19),
 (2, 'Securities/Invest', 44544099, 41, 59, 4, 20),
@@ -120,7 +120,7 @@ values
 (4,	'Retired', 40119545, 56, 44, 5, 31),
 (5,	'Real Estate', 34541929, 61, 38, 5, 32),
 (6,	'Lobbyists', 28091461, 69, 29, 5, 30),
-(7,	'Insurance'	26645441, 53, 47, 5, 32),
+(7,	'Insurance', 26645441, 53, 47, 5, 32),
 (8,	'Leadership PACs', 24810628, 67, 32, 5, 33),
 (9,	'Pharm/Health Prod', 18267877, 58, 42, 5, 12),
 (10, 'Public Sector Unions', 15520926,	91,	9, 5, 34),
@@ -145,11 +145,11 @@ values
 (7,	'Insurance', 22738147, 36, 62, 7, 41),
 (8,	'Lobbyists', 19836860, 41, 58, 7, 41),
 (9,	'Commercial Banks',	16015803, 35, 63, 7, 37),
-(10, 'Pharm/Health Prod', 14947514,	32,	66, 7, 41)
+(10, 'Pharm/Health Prod', 14947514,	32,	66, 7, 41),
 -- 2004
 (1,	'Lawyers/Law Firms', 87396068,	80,	20, 8, 42),	
 (2,	'Retired', 41826396, 63, 37, 8, 42),
-(3,	'Real Estate', 37274916, 55, 45, 8, 42)
+(3,	'Real Estate', 37274916, 55, 45, 8, 42),
 (4,	'Securities/Invest', 33775956,	61,	39, 8, 42),
 (5,	'Health Professionals',	33540591, 48, 52, 8, 42),
 (6,	'Insurance', 20105539, 40, 60, 8, 42),	
@@ -167,7 +167,7 @@ values
 (7,	'Leadership PACs',	13397371, 39, 61, 9, 47),
 (8,	'Lobbyists', 11488286, 52, 48, 9, 48),
 (9,	'Transport Unions',	10392114, 81, 19, 9, 48),
-(10, 'Commercial Banks', 10,318,792, 40, 60, 9, 32),
+(10, 'Commercial Banks', 1018792, 40, 60, 9, 32),
 -- 2000
 (1,	'Lawyers/Law Firms', 32669023, 60, 39, 10, 50),
 (2,	'Retired', 23945174, 23, 76, 10, 50),
@@ -179,15 +179,6 @@ values
 (8,	'Lobbyists', 9255429, 48, 52, 10, 51),
 (9,	'Transport Unions', 9131054, 83, 17, 10, 52),
 (10, 'Oil & Gas', 9119104, 24, 75, 10, 50);
-
-
-
-
-SELECT topRecipient.name, interestGroupYears.year
-FROM topRecipient
-INNER JOIN interestGroupName ON topRecipient.name_id = interestGroupName.name_id
-inner join interestGroupYears on interestGroupName.year_id = interestGroupYears.year_id;
-
 
 INSERT INTO cost_of_election VALUES
 ('2016*',   '$6.444.253.265',	'$3.076.968.576',	'$3.078.629.166'),	
