@@ -20,9 +20,9 @@ html {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #060b60; 
 }
 
+/* Index Style */
 .wrapper {
   position: relative;
   width: 700px;
@@ -48,4 +48,41 @@ a {
   display: block;
   opacity: 0.5;
 
+}
+
+/* Footer Style */
+.topfooter {
+    display: flex;
+    background-color: rgba(142, 7, 7, 0.75);   
+    color: #fff;
+    padding: 25px;
+}
+
+.bottomfooter {
+    display: flex;
+    background-color: rgba(6, 11, 96, 0.75);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    vertical-align: center;
+}
+
+.footerlink {
+    color: #fff;
+}
+
+.footerul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.footertext {
+    float: left;
+}
+
+.footerlist {
+    float: right;
 }
