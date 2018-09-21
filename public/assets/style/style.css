@@ -1,0 +1,51 @@
+/* Color palette
+
+#8e0707 - Red
+#060b60 - Blue
+#262423 - Grey
+#ffffff- Black
+#000000 - White
+
+Fonts
+font-family: 'Source Sans Pro', sans-serif;
+
+*/
+
+
+/* Global Style */
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #060b60; 
+}
+
+.wrapper {
+  position: relative;
+  width: 700px;
+  margin: auto;
+  background: white;
+  border: 1px solid #262423;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  text-align: center;
+}
+
+.total {
+    font-size: 72px;
+}
+
+.capitolIMG {
+  display: block;
+  opacity: 0.5;
+
+}
