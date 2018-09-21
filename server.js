@@ -10,9 +10,18 @@ const exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+var db = require("./models");
+
+
 //require("./routes/apiRoutes.js")(app);
 //require("./routes/htmlRoutes.js")(app);
 
-app.listen(PORT, function () {
-    console.log("🌎 DO I LOVE " + PORT + " OR WHAT?!?🌎");
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("🌎 DO I LOVE " + PORT + " OR WHAT?!?🌎");;
+  });
 });
+
+
