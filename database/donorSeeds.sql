@@ -1,3 +1,4 @@
+--SEEDS FOR CYCLE 2018
 insert into cycle2018
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
@@ -40,6 +41,7 @@ insert into cycle2018
 values
     ("Simons, James H.", "Retired", "New York, NY", 1049210, 0, 100);
 
+--SEEDS FOR CYCLE 2016
 insert into cycle2016
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
@@ -81,6 +83,7 @@ insert into cycle2016
 values
     ("Foster, Paul L.", "Western Refining", "El Paso, TX", 1401800, 0, 100);
 
+--SEEDS FOR CYCLE 2014
 insert into cycle2014
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
@@ -122,6 +125,7 @@ insert into cycle2014
 values
     ("Sussman, Donald", "Paloma Partners", "Rye Brook, NY", 408241, 0, 100);
 
+--SEEDS FOR CYCLE 2012
 insert into cycle2012
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
@@ -163,6 +167,7 @@ insert into cycle2012
 values
     ("Uihlein, Richard", "Uline Inc", "Lake Forest, IL", 237000, 0, 100);
 
+--SEEDS FOR CYCLE 2010
 insert into cycle2010
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
@@ -203,3 +208,208 @@ insert into cycle2010
     (contributor_name, contributor_company, contributor_city, total_contribution, percent_to_dems, percent_to_reps)
 values
     ("Deal, Pamela Susan", "NAU Companies", "St Petersburg, MN", 187700, 100, 0);
+
+--UPDATES FOR CYCLE 2018
+update cycle2018
+set contributor_name = "Donald S. Sussman"
+where contributor_id = 1;
+
+update cycle2018
+set contributor_name = "Deborah Simon"
+where contributor_id = 2;
+
+update cycle2018
+set contributor_name = "Paul Skjodt & Cynthia Simon-Skjodt"
+where contributor_id = 3;
+
+update cycle2018
+set contributor_name = "Charles R. Schwab"
+where contributor_id = 4;
+
+update cycle2018
+set contributor_name = "Greg Lindberg"
+where contributor_id = 5;
+
+update cycle2018
+set contributor_name = "Robert L. Mercer"
+where contributor_id = 6;
+
+update cycle2018
+set contributor_name = "Charles P. Joyce"
+where contributor_id = 7;
+
+update cycle2018
+set contributor_name = "Fred J. Eychaner"
+where contributor_id = 8;
+
+update cycle2018
+set contributor_name = "Karen A. Wright"
+where contributor_id = 9;
+
+update cycle2018
+set contributor_name = "James H. Simons"
+where contributor_id = 10;
+
+--UPDATES FOR CYCLE 2016
+update cycle2016
+set contributor_name = "Sheldon G. & Miriam O. Adelson"
+where contributor_id = 1;
+
+update cycle2016
+set contributor_name = "Fred Eychaner"
+where contributor_id = 2;
+
+update cycle2016
+set contributor_name = "James R. & Mary K. Pritzker"
+where contributor_id = 3;
+
+update cycle2016
+set contributor_name = "Donald S. Sussman"
+where contributor_id = 4;
+
+update cycle2016
+set contributor_name = "Paul E. Singer"
+where contributor_id = 5;
+
+update cycle2016
+set contributor_name = "Kenneth C. & Anne Dias Griffin "
+where contributor_id = 6;
+
+update cycle2016
+set contributor_name = "Karen A. Wright"
+where contributor_id = 7;
+
+update cycle2016
+set contributor_name = "Richard Uihlein"
+where contributor_id = 8;
+
+update cycle2016
+set contributor_name = "Charles R. & Helen O. Schwab"
+where contributor_id = 9;
+
+update cycle2016
+set contributor_name = "Paul L. Foster"
+where contributor_id = 10;
+
+--UPDATES FOR CYCYLE 2014
+update cycle2014
+set contributor_name = "Paul E. Singer"
+where contributor_id = 1;
+
+update cycle2014
+set contributor_name = "William H. Clark"
+where contributor_id = 2;
+
+update cycle2014
+set contributor_name = "Ronnie Cameron"
+where contributor_id = 3;
+
+update cycle2014
+set contributor_name = "Tatnall Lea Hillman"
+where contributor_id = 4;
+
+update cycle2014
+set contributor_name = "Marsha Z. Laufer"
+where contributor_id = 5;
+
+update cycle2014
+set contributor_name = "Charles R. Schwab"
+where contributor_id = 6;
+
+update cycle2014
+set contributor_name = "John W. Childs"
+where contributor_id = 7;
+
+update cycle2014
+set contributor_name = "Susan L. Groff"
+where contributor_id = 8;
+
+update cycle2014
+set contributor_name = "Paul J. Isaac"
+where contributor_id = 9;
+
+update cycle2014
+set contributor_name = "Donald S. Sussman"
+where contributor_id = 10;
+
+--UPDATES FOR CYCLE 2012
+update cycle2012
+set contributor_name = "Charles T. Jr. & Charlotte Munger"
+where contributor_id = 1;
+
+update cycle2012
+set contributor_name = "William H. & Elloine Clark"
+where contributor_id = 2;
+
+update cycle2012
+set contributor_name = "Guy M. Bowers"
+where contributor_id = 3;
+
+update cycle2012
+set contributor_name = "Charles R. & Helen O. Schwab"
+where contributor_id = 4;
+
+update cycle2012
+set contributor_name = "Ray Palmer Jr. Oden"
+where contributor_id = 5;
+
+update cycle2012
+set contributor_name = "John A. Jr. & Rita J. Canning"
+where contributor_id = 6;
+
+update cycle2012
+set contributor_name = "Harry P. & Barbara Kamen"
+where contributor_id = 7;
+
+update cycle2012
+set contributor_name = "Jeffery Hurt"
+where contributor_id = 8;
+
+update cycle2012
+set contributor_name = "Marie-Therese Tibbs"
+where contributor_id = 9;
+
+update cycle2012
+set contributor_name = "Richard Uihlein"
+where contributor_id = 10;
+
+--UPDATES FOR 2010
+update cycle2010
+set contributor_name = "Bruce N. Berger"
+where contributor_id = 1;
+
+update cycle2010
+set contributor_name = "Ray Palmer Jr. & Dorthy L. Oden"
+where contributor_id = 2;
+
+update cycle2010
+set contributor_name = "Guy M. Bowers"
+where contributor_id = 3;
+
+update cycle2010
+set contributor_name = "Henry D. Lord"
+where contributor_id = 4;
+
+update cycle2010
+set contributor_name = "Harlan & Dian G. Stai"
+where contributor_id = 5;
+
+update cycle2010
+set contributor_name = "Robert J. Perry"
+where contributor_id = 6;
+
+update cycle2010
+set contributor_name = "Robert J. Perry"
+where contributor_id = 7;
+
+update cycle2010
+set contributor_name = "Fred Eychaner"
+where contributor_id = 8;
+
+update cycle2010
+set contributor_name = "David G. Herro"
+where contributor_id = 9;
+
+update cycle2010
+set contributor_name = "Pamela S. Deal"
+where contributor_id = 10;
