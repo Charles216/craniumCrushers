@@ -2,83 +2,83 @@
 
 #8e0707 - Red
 rgba(142, 7, 7, 0.75) more transparent 
+
 #060b60 - Blue
 rgba(6, 11, 96, 0.75) more transparent
+
 #262423 - Grey
 rgba(38, 36, 35, 0.75) more transparent
+
 #ffffff- Black
 #000000 - White
 
-Fonts
-font-family: 'Source Sans Pro', sans-serif;
+Google Fonts
+font-family: 'Open Sans', sans-serif;
 
 */
 
 
 /* Global Style */
 html, body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 100%
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #060b60;
 }
 
 .wrapper {
     display: flex;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
     flex: 1;
 }
 
+.content {
+    order: 2;
+    width: 60%;
+}
+
+/* Sidebar Style */
 .sidebar {
- 
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 500px;
-}
-
-
-/* Footer Style */
-.bluefooter {
-    /* Shaping */
-    flex-shrink: 0;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-
-    /* Color*/
-    background-color:rgba(6, 11, 96, 0.75);
-    border-top: 1px solid #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
-
-.redfooter {
-    flex-shrink: 0;
-    height: 10px;
-    background-color: rgba(142, 7, 7, 0.75); 
-}
-
-.footertext {
-    margin: 10px;
-    color: #fff;
+    order: 1;
+    width: 25%;
+    margin-left: 100px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 15px;
     text-align: center;
-
 }
 
-.footerlink {
-    color: #fff;
+.nav {
+    text-align: left;
+    list-style-type: none;
+    font-size: 24px;
 }
+
+.credit {
+    color: #060b60;
+    font-size: 8px;
+}
+
+li {
+    border-bottom: 1px solid #262423;
+    margin: 2px;
+    width: 90%;
+}
+
+.navtext {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
 
 /* Index Style */
 .headerimg {
     border: 1px solid #000;
+    border-radius: 15px;
     margin: 10px;
     
 }
@@ -94,7 +94,7 @@ a {
 
 .mainlink {
     color: #060b60;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .headertext {
@@ -103,15 +103,16 @@ a {
     top: 150px;
     left: 350px;
     transform: translate(-50%, -50%);
-    width: 505px;
+    width: 504px;
     padding: 10px;
 
     /* Styling */
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
     background-color: #fff;
     border-left: 1px solid #000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }

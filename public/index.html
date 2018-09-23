@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.css">
 </head>
@@ -16,52 +17,58 @@
 <body>
 
     <div class="wrapper">
-        <div class="sidebar">
-                <h4>Campaign Finance News</h4>
-                
-                    <!-- Twitter Newsfeed -->
-                    <a class="twitter-timeline" data-width="250" data-height="450" data-link-color="#060b60" href="https://twitter.com/OpenSecretsDC?ref_src=twsrc%5Etfw">Tweets by OpenSecretsDC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
-            </div> <!-- Close sidebar -->
 
-    <div class="content">
+        <!-- Sidebar Nav -->
+        <aside class="sidebar">
+            <img src="assets/images/logo.png" alt="Campaign Query Logo">
 
-        <div class="pacs main">
-            <h2 class="headertext"><a href="#" class="mainlink">Super PACs</a></h2>
-            <img src="assets/images/capitol.jpg" alt="Super PACs" class="headerimg">
-            <p class="category"></p>
-        </div><!-- Close pacs -->
+            <h4 class="navtext">Campaign Query provides straightforward campaign finance data for federal elections.</h4>
 
-        <br>
+            <ul class="nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul><!-- Close ul -->
 
-        <div class="interesgroups main">
-            <h2 class="headertext"><a href="#" class="mainlink">Public Interest Groups</a></h2><img src="assets/images/interestGroups.jpg"
-                alt="Public Interest Groups" class="headerimg">
-        </div><!-- Close interestgroups -->
+                <ul class="nav">
+                        <li><a href="#" class="footerlink">PACs & Super PACs</a></li>
+                        <li><a href="#" class="footerlink">Public Interest Groups</a></li>
+                        <li><a href="#" class="footerlink">Individual Donors</a></li>
+                    </ul> <!-- Close ul -->
+            
+            <!-- Twitter Newsfeed -->
+            <h5 class="navtext">Recent News:</h5>
+            <a class="twitter-timeline" data-width="250" data-height="450" data-link-color="#060b60" href="https://twitter.com/OpenSecretsDC?ref_src=twsrc%5Etfw">Tweets
+                by OpenSecretsDC</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+                <p class="credit"> © 2018 Cranium Crushers</p>
+            </aside> <!-- Close sidebar -->
 
-        <br>
+        <div class="content">
 
-        <div class="donors main">
-            <h2 class="headertext"><a href="#" class="mainlink">Individual Donors</a></h2>
-            <img src="assets/images/individuals.jpg" alt="Individual Donots" class="headerimg">
-        </div><!-- Close donors -->
+            <div class="pacs main">
+                <h2 class="headertext"><a href="#" class="mainlink">PACs & Super PACs</a></h2>
+                <img src="assets/images/capitol.jpg" alt="Super PACs" class="headerimg">
+                <p class="category"></p>
+            </div><!-- Close pacs -->
 
-    </div> <!-- Close content -->
+            <br>
+
+            <div class="interesgroups main">
+                <h2 class="headertext"><a href="#" class="mainlink">Public Interest Groups</a></h2><img src="assets/images/interestGroups.jpg"
+                    alt="Public Interest Groups" class="headerimg">
+            </div><!-- Close interestgroups -->
+
+            <br>
+
+            <div class="donors main">
+                <h2 class="headertext"><a href="#" class="mainlink">Individual Donors</a></h2>
+                <img src="assets/images/individuals.jpg" alt="Individual Donots" class="headerimg">
+            </div><!-- Close donors -->
+
+        </div> <!-- Close content -->
     </div> <!-- Close wrapper-->
-
-
-    <!-- Begin Footer -->
-    <footer class="bluefooter">
-        <div class="footertext">
-            <ul>
-                <li><a href="#" class="footerlink">Individual Donors</a></li>
-                <li><a href="#" class="footerlink">Public Interest Groups</a></li>
-                <li><a href="#" class="footerlink">Super PACs</a></li>
-            </ul> <!-- Close ul -->
-        </div><!-- Close footertext-->
-    </footer><!-- Close bluefooter-->
-
-    <footer class="redfooter">
-    </footer><!-- Close redfooter-->
 
 </body>
 
