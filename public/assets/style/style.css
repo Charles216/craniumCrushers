@@ -1,8 +1,11 @@
 /* Color palette
 
 #8e0707 - Red
+rgba(142, 7, 7, 0.75) more transparent 
 #060b60 - Blue
+rgba(6, 11, 96, 0.75) more transparent
 #262423 - Grey
+rgba(38, 36, 35, 0.75) more transparent
 #ffffff- Black
 #000000 - White
 
@@ -13,39 +16,102 @@ font-family: 'Source Sans Pro', sans-serif;
 
 
 /* Global Style */
-html {
+html, body {
     font-family: 'Source Sans Pro', sans-serif;
+    height: 100%
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #060b60; 
 }
 
 .wrapper {
-  position: relative;
-  width: 700px;
-  margin: auto;
-  background: white;
-  border: 1px solid #262423;
+    display: flex;
 }
 
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 1;
-  text-align: center;
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.total {
-    font-size: 72px;
+.sidebar {
+ 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
 }
 
-.capitolIMG {
-  display: block;
-  opacity: 0.5;
 
+/* Footer Style */
+.bluefooter {
+    /* Shaping */
+    flex-shrink: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    /* Color*/
+    background-color:rgba(6, 11, 96, 0.75);
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.redfooter {
+    flex-shrink: 0;
+    height: 10px;
+    background-color: rgba(142, 7, 7, 0.75); 
+}
+
+.footertext {
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.footerlink {
+    color: #fff;
+}
+
+/* Index Style */
+.headerimg {
+    border: 1px solid #000;
+    margin: 10px;
+    
+}
+
+.main {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    color: #262423; 
+    position: relative;
+
+}
+
+.mainlink {
+    color: #060b60;
+    font-weight: 400;
+}
+
+.headertext {
+    /* Positioning */
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    transform: translate(-50%, -50%);
+    width: 505px;
+    padding: 10px;
+
+    /* Styling */
+    font-size: 48px;
+    text-align: center;
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    
 }
