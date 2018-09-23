@@ -65,3 +65,43 @@ a {
 .footerlink {
     color: #fff;
 }
+
+/* Index Style */
+.headerimg {
+    border: 1px solid #000;
+    margin: 10px;
+    
+}
+
+.main {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    color: #262423; 
+    position: relative;
+
+}
+
+.mainlink {
+    color: #060b60;
+    font-weight: 400;
+}
+
+.headertext {
+    /* Positioning */
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    transform: translate(-50%, -50%);
+    width: 505px;
+    padding: 10px;
+
+    /* Styling */
+    font-size: 48px;
+    text-align: center;
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    
+}
