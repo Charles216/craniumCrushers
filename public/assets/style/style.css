@@ -45,6 +45,7 @@ a {
     order: 1;
     width: 25%;
     margin-left: 100px;
+    padding: 5px;
     border: 1px solid #000;
     border-radius: 15px;
     text-align: center;
@@ -64,7 +65,13 @@ a {
 li {
     border-bottom: 1px solid #262423;
     margin: 2px;
-    width: 75%;
+    width: 90%;
+}
+
+.navtext {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
 }
 
 
