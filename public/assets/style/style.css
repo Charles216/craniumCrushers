@@ -28,20 +28,18 @@ a {
 
 .wrapper {
     display: flex;
+    flex: 1;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    order: 2;
+    width: 60%;
 }
 
 .sidebar {
  
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 500px;
+    order: 1;
+    width: 30%;
 }
 
 
