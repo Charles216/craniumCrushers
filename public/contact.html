@@ -25,17 +25,18 @@
             <h4 class="navtext">Campaign Query provides straightforward campaign finance data for federal elections.</h4>
 
             <ul class="nav">
+                    <li><a href="#" class="footerlink">PACs & Super PACs</a></li>
+                    <li><a href="#" class="footerlink">Public Interest Groups</a></li>
+                    <li><a href="#" class="footerlink">Individual Donors</a></li>
+                </ul> <!-- Close ul -->
+
+            <ul class="nav">
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul><!-- Close ul -->
 
-                <ul class="nav">
-                        <li><a href="#" class="footerlink">PACs & Super PACs</a></li>
-                        <li><a href="#" class="footerlink">Public Interest Groups</a></li>
-                        <li><a href="#" class="footerlink">Individual Donors</a></li>
-                    </ul> <!-- Close ul -->
-            
+               
             <!-- Twitter Newsfeed -->
             <h5 class="navtext">Recent News:</h5>
             <a class="twitter-timeline" data-width="250" data-height="450" data-link-color="#060b60" href="https://twitter.com/OpenSecretsDC?ref_src=twsrc%5Etfw">Tweets
@@ -45,12 +46,31 @@
                 <p class="credit"> © 2018 Cranium Crushers</p>
             </aside> <!-- Close sidebar -->
 
-        <div class="content">
+        <div class="content filler">
+                <h1 class="title">Contact Us</h1>
 
+                <p class="contenttext">Fill out the below form to contact us regarding Campaign Query.  Please allow up to 48 hours for a response.</p>
+
+                <form class="contactus contenttext">
+
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="name">
+                        <br>
+                        <label for="email">Your email:</label>
+                        <input type="text" id="email" name="email">
+                        <br>
+                        <textarea id="message" name="message"></textarea>
+                        <br>
+                        <button class="submit">Submit</button>
+                    
+                      </form>
 
         </div> <!-- Close content -->
     </div> <!-- Close wrapper-->
 
+        <script src="contactform.js">
+        //Contact form script
+        </script>
 </body>
 
 </html>
