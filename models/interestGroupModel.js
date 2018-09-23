@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var InterestGroupName = sequelize.define("InterestGroupName", {
+    var InterestGroupName = sequelize.define("interestgroupname", {
       rank: {
         type: DataTypes.INTEGER,
         allowNull: false,

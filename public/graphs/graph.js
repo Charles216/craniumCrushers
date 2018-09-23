@@ -3,8 +3,8 @@
  */
 var chartData = {
     "1995": [
-      { "sector": "Agriculture", "size": 6.6 },
-      { "sector": "Mining and Quarrying", "size": 0.6 },
+      { "sector": "Agriculture", "size": 55.6 },
+      { "sector": "Mining and Quarrying", "size": 5.6 },
       { "sector": "Manufacturing", "size": 23.2 },
       { "sector": "Electricity and Water", "size": 2.2 },
       { "sector": "Construction", "size": 4.5 },
