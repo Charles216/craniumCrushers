@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Year = sequelize.define("InterestGroupYears", {
+    var Year = sequelize.define("interestgroupyears", {
       year: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     Year.associate = function(models) {
       // We're saying that a Post should belong to an Author
       // A Post can't be created without an Author due to the foreign key constraint
-      Year.hasMany(models.InterestGroupName, {
+      Year.hasMany(models.interestgroupname, {
         foreignKey: "year_id"
       });
     };
