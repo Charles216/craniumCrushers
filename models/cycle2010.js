@@ -1,6 +1,6 @@
 //CYCLE2010
 module.exports = function (sequelize, DataTypes) {
-    var Cycle2010 = sequelize.define("cycle2010", {
+    var Cycle2010 = sequelize.define("cycle2010s", {
         display_name: {
             type: DataTypes.STRING,
             allowNUll: false
@@ -28,8 +28,8 @@ module.exports = function (sequelize, DataTypes) {
         percent_to_reps: {
             type: DataTypes.INTEGER,
             allowNUll: false
-        },
-        freezeTableName: true
+        }
+
     });
     return Cycle2010;
 };
