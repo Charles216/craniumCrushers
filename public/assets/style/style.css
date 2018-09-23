@@ -30,6 +30,10 @@ a {
     font-weight: bold;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 
 /* Footer Style */
 .bluefooter {
