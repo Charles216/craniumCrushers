@@ -30,38 +30,6 @@ a {
     font-weight: bold;
 }
 
-/* Index Style */
-.wrapper {
-  position: relative;
-  width: 700px;
-  margin: auto;
-  background: white;
-  border: 1px solid #262423;
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: 1;
-  text-align: center;
-}
-
-.total {
-    font-size: 72px;
-}
-
-.capitolIMG {
-  display: block;
-  opacity: 0.5;
-
-}
-
-/* Content style */
-.content {
-    flex: 1 0 auto;
-}
 
 /* Footer Style */
 .bluefooter {
