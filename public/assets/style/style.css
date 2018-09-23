@@ -135,5 +135,37 @@ li {
 
 .title {
     color: #060b60;
-    
+
+}
+
+#message {
+    width: 300px;
+    height: 300px;
+}
+
+.contactus {
+    text-align: center;
+}
+
+input[type=text], textarea {
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 24px;
+    width: 300px;
+    margin: 5px;
+
+}
+
+label {
+    font-size: 16px;
+}
+
+#message {
+    width: 375px;
+}
+
+.submit {
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 25px;
 }
