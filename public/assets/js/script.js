@@ -3,7 +3,7 @@ var byCommitee = [];
 var candidateContribution = {};
 var committeeContribution = {};
 
-$.get("/data", function (data) {
+$.get("/api/data", function (data) {
     console.log(data);
     var count = 1;
     for (index = 0; index < data.length; index++) {
