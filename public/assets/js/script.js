@@ -1,10 +1,10 @@
 var byCandidate = [];
-var byCommitee = [];
+// var byCommitee = [];
 var candidateContribution = {};
-var committeeContribution = {};
+// var committeeContribution = {};
 
 $.get("/api/data", function (data) {
-    console.log(data);
+    // console.log(data);
     var count = 1;
     for (index = 0; index < data.length; index++) {
         for (i = 0; i < data[0].results.length; i++) {
@@ -37,32 +37,32 @@ $.get("/api/data", function (data) {
                     }
                 }
 
-                if (committeeContribution[committeeName]) {
-                    committeeContribution[committeeName].candidates.push({
-                        Candidate: candidate,
-                        Total: total,
-                        SupportOppose: supportOrOppose
-                    })
-                } else {
-                    committeeContribution[committeeName] = {
-                        candidates: [
-                            {
-                                Candidate: candidate,
-                                Total: total,
-                                SupportOppose: supportOrOppose
-                            }
-                        ]
-                    }
-                }
-                $("table").append(
-                    `<tr>
-                <td>$${total}</td>
-                <td>${candidate}</td>
-                <td>${committeeName}</td>
-                <td>${supportOrOppose}</td>
-                <td>${count}</td>
-                <tr>`
-                )
+                // if (committeeContribution[committeeName]) {
+                //     committeeContribution[committeeName].candidates.push({
+                //         Candidate: candidate,
+                //         Total: total,
+                //         SupportOppose: supportOrOppose
+                //     })
+                // } else {
+                //     committeeContribution[committeeName] = {
+                //         candidates: [
+                //             {
+                //                 Candidate: candidate,
+                //                 Total: total,
+                //                 SupportOppose: supportOrOppose
+                //             }
+                //         ]
+                //     }
+                // }
+                // $("table").append(
+                //     `<tr>
+                // <td>$${total}</td>
+                // <td>${candidate}</td>
+                // <td>${committeeName}</td>
+                // <td>${supportOrOppose}</td>
+                // <td>${count}</td>
+                // <tr>`
+                // )
                 count++;
             }
 
@@ -83,29 +83,29 @@ $.get("/api/data", function (data) {
     }
 
 
-    byCommitee = Object.keys(committeeContribution).map(function (key) {
-        return {
-            committeeName: key,
-            contributions: committeeContribution[key].candidates
-        }
-    })
+    // byCommitee = Object.keys(committeeContribution).map(function (key) {
+    //     return {
+    //         committeeName: key,
+    //         contributions: committeeContribution[key].candidates
+    //     }
+    // })
 
-    for (i = 0; i < byCommitee.length; i++) {
-        $("#committee-dropdown").append(
-            `<a class="dropdown-item">${byCommitee[i].committeeName}</a>`
-        )
-    }
+    // for (i = 0; i < byCommitee.length; i++) {
+    //     $("#committee-dropdown").append(
+    //         `<a class="dropdown-item">${byCommitee[i].committeeName}</a>`
+    //     )
+    // }
 
     $(".candidate-choice").on("click", function (event) {
         var supportPieData = [];
         var opposePieData = [];
         event.preventDefault();
-        console.log("Committee Spending in Support of: " + this.id)
+        // console.log("Committee Spending in Support of: " + this.id)
         for (i = 0; i < byCandidate.length; i++) {
             for (index = 0; index < byCandidate[i].contributions.length; index++) {
                 if (this.id === byCandidate[i].candidate && byCandidate[i].contributions[index].SupportOppose === "S") {
-                    console.log(byCandidate[i].contributions[index].Committee)
-                    console.log(byCandidate[i].contributions[index].Total)
+                    // console.log(byCandidate[i].contributions[index].Committee)
+                    // console.log(byCandidate[i].contributions[index].Total)
                     // start Pie Chart Code
                     supportPieData.push(
                         { name: byCandidate[i].contributions[index].Committee, y: byCandidate[i].contributions[index].Total },
@@ -186,6 +186,8 @@ $.get("/api/data", function (data) {
         }
 
     })
+
+
 
 
 })

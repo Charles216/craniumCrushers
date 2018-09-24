@@ -1,7 +1,7 @@
 var keys = require("../keys.js")
 var request = require("request")
 var FEC_key = keys.fec_api_key
-var pageNum = 38;
+var pageNum = 1;
 
 
 callFecApi();
