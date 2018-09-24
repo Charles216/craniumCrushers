@@ -1,5 +1,176 @@
-#candidate-dropdown, #committee-dropdown {
+/* Color palette
+
+#8e0707 - Red
+rgba(142, 7, 7, 0.75) more transparent 
+
+#060b60 - Blue
+rgba(6, 11, 96, 0.75) more transparent
+
+#262423 - Grey
+rgba(38, 36, 35, 0.75) more transparent
+
+#ffffff- Black
+#000000 - White
+
+Google Fonts
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+/* Global Style */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #060b60;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    order: 2;
+    width: 60%;
+}
+
+/* Sidebar Style */
+.sidebar {
+    order: 1;
+    width: 25%;
+    margin-left: 100px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nav {
+    text-align: left;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.credit {
+    color: #060b60;
+    font-size: 8px;
+}
+
+li {
+    border-bottom: 1px solid #262423;
+    margin: 2px;
+    width: 90%;
+}
+
+.navtext {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    color: #262423;
+}
+
+
+/* Index Style */
+.headerimg {
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+
+.main {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    color: #262423; 
+    position: relative;
+
+}
+
+.mainlink {
+    color: #060b60;
+    font-weight: 700;
+}
+
+.headertext {
+    /* Positioning */
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    transform: translate(-50%, -50%);
+    width: 504px;
+    padding: 10px;
+
+    /* Styling */
+    font-size: 36px;
+    text-align: center;
+    background-color: #fff;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* Sub Pages */
+.filler {
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 25px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.contenttext {
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+}
+
+.title {
+    color: #060b60;
+
+}
+
+#message {
+    width: 300px;
+    height: 300px;
+}
+
+.contactus {
+    text-align: center;
+}
+
+input[type=text], textarea {
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 24px;
+    width: 300px;
+    margin: 5px;
+  
+ #candidate-dropdown, #committee-dropdown {
     height: auto;
     max-height: 200px;
     overflow-x: hidden;
+
+}
+
+label {
+    font-size: 16px;
+}
+
+#message {
+    width: 375px;
+}
+
+.submit {
+    border: 1px solid #000;
+    border-radius: 15px;
+    height: 25px;
 }
