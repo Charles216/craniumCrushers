@@ -113,7 +113,7 @@ $(document).ready(function () {
                 tooltip: {
                     formatter: function () {
                         console.log(this);
-                        return ("Name: " + this.series.userOptions.data[this.point.index].fullname + " City: " + this.series.userOptions.data[this.point.index].city + " Donation: $" + this.series.userOptions.data[this.point.index].donation);
+                        return ("NAME: " + this.series.userOptions.data[this.point.index].fullname + " CITY: " + this.series.userOptions.data[this.point.index].city + " DONATION: $" + this.series.userOptions.data[this.point.index].donation + " PERCENT to DEMOCRATS: " + this.series.userOptions.data[this.point.index].dems + "%" + " PERCENT to REPUBLICANS: " + this.series.userOptions.data[this.point.index].reps + "%");
                     }
                 },
                 title: {
@@ -130,7 +130,7 @@ $(document).ready(function () {
                 tooltip: {
                     formatter: function () {
                         console.log(this);
-                        return ("Name: " + this.series.userOptions.data[this.point.index].fullname + " City: " + this.series.userOptions.data[this.point.index].city + " Donation: $" + this.series.userOptions.data[this.point.index].donation);
+                        return ("NAME: " + this.series.userOptions.data[this.point.index].fullname + " CITY: " + this.series.userOptions.data[this.point.index].city + " DONATION: $" + this.series.userOptions.data[this.point.index].donation + " PERCENT to DEMOCRATS: " + this.series.userOptions.data[this.point.index].dems + "%" + " PERCENT to REPUBLICANS: " + this.series.userOptions.data[this.point.index].reps + "%");
                     }
                 },
                 title: {
@@ -147,7 +147,7 @@ $(document).ready(function () {
                 tooltip: {
                     formatter: function () {
                         console.log(this);
-                        return ("Name: " + this.series.userOptions.data[this.point.index].fullname + " City: " + this.series.userOptions.data[this.point.index].city + " Donation: $" + this.series.userOptions.data[this.point.index].donation);
+                        return ("NAME: " + this.series.userOptions.data[this.point.index].fullname + " CITY: " + this.series.userOptions.data[this.point.index].city + " DONATION: $" + this.series.userOptions.data[this.point.index].donation + " PERCENT to DEMOCRATS: " + this.series.userOptions.data[this.point.index].dems + "%" + " PERCENT to REPUBLICANS: " + this.series.userOptions.data[this.point.index].reps + "%");
                     }
                 },
                 title: {
@@ -164,7 +164,7 @@ $(document).ready(function () {
                 tooltip: {
                     formatter: function () {
                         console.log(this);
-                        return ("Name: " + this.series.userOptions.data[this.point.index].fullname + " City: " + this.series.userOptions.data[this.point.index].city + " Donation: $" + this.series.userOptions.data[this.point.index].donation);
+                        return ("NAME: " + this.series.userOptions.data[this.point.index].fullname + " CITY: " + this.series.userOptions.data[this.point.index].city + " DONATION: $" + this.series.userOptions.data[this.point.index].donation + " PERCENT to DEMOCRATS: " + this.series.userOptions.data[this.point.index].dems + "%" + " PERCENT to REPUBLICANS: " + this.series.userOptions.data[this.point.index].reps + "%");
                     }
                 },
                 title: {
