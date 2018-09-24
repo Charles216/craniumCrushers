@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var InterestGroupName = sequelize.define("interestgroupname", {
+    var InterestGroup = sequelize.define("InterestGroup", {
       rank: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -22,6 +22,15 @@ module.exports = function(sequelize, DataTypes) {
         },
         
     });
-  
-    return InterestGroupName;
+    InterestGroup.associate = function(models) {
+        // We're saying that a Post should belong to an Author
+        // A Post can't be created without an Author due to the foreign key constraint
+        InterestGroup.belongsTo(models.Year, {
+          foreignKey: {
+            
+            allowNull: false
+          }
+        });
+      };
+    return InterestGroup;
   };

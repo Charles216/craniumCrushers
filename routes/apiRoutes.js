@@ -33,23 +33,18 @@ function callFecApi() {
 } 
 
 var db = require("../models");
-module.exports = function (app) {
-
-  // GET route for getting all of the todos
-  app.get("/api/interest_groups", function (req, res) {
-    // findAll returns all entries for a table when used with no options
-    db.interestgroupname.findAll().then(function (dbInterestGroup) {
-      // We have access to the todos as an argument inside of the callback function
-      res.json(dbInterestGroup);
-    });
-
-  });
-  
+console.log('=============================', db.ear)
+module.exports = function (app) {  
   
     // GET route for getting all of the interest groups
     app.get("/api/interestGroups", function (req, res) {
       // findAll returns all entries for a table when used with no options
-      db.interestgroupname.findAll().then(function (dbInterestGroup) {
+      db.InterestGroup.findAll({
+        include: [{
+          where: {year: 2018},
+          model: db.Year,
+        }]
+      }).then(function (dbInterestGroup) {
         // We have access to the interest as an argument inside of the callback function
         res.json(dbInterestGroup);
       });
