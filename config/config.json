@@ -2,9 +2,12 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "campaignquery",
+    "database": "test_db",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "dialectOptions": {
+      "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock"
+    }
   },
   "test": {
     "username": "root",
