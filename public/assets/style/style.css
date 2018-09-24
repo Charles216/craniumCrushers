@@ -54,7 +54,7 @@ a {
 .nav {
     text-align: left;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .credit {
@@ -153,6 +153,11 @@ input[type=text], textarea {
     height: 24px;
     width: 300px;
     margin: 5px;
+  
+ #candidate-dropdown, #committee-dropdown {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
 
 }
 
