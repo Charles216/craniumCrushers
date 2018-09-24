@@ -1,6 +1,6 @@
 
 
-insert into interestGroupYears values 
+insert into Year values 
 (2018),
 (2016),
 (2014),
@@ -12,7 +12,7 @@ insert into interestGroupYears values
 (2002),
 (2000);
 
-insert into topRecipients (name) values
+insert into TopRecipient (name) values
 ('Claire McCaskill (D-Mo)'),
 ('Ted Cruz (R-Texas)'),
 ('Sherrod Brown (D-Ohio)'),
@@ -67,7 +67,7 @@ insert into topRecipients (name) values
 ('David E Bonior (D-Mich)'),
 ('Ron Klink (D-Pa)');
 
-insert into interestGroupNames (rank, interest_group, total_donated, demPCT,repPCT, year_id, name_id)
+insert into InterestGroup (rank, interest_group, total_donated, demPCT,repPCT, year_id, name_id)
 values
 -- 2018
 (1, 'Lawyers/Law Firms', 64577411, 77, 23, 1, 1),

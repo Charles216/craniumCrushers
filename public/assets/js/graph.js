@@ -1,10 +1,11 @@
 /**
  * Define data for each year
  */
-var chartData = {
+
+  var chartData = {
     "1995": [
-      { "sector": "Agriculture", "size": 55.6 },
-      { "sector": "Mining and Quarrying", "size": 5.6 },
+      { "sector": "Agriculture", "size": 6.6 },
+      { "sector": "Mining and Quarrying", "size": 0.6 },
       { "sector": "Manufacturing", "size": 23.2 },
       { "sector": "Electricity and Water", "size": 2.2 },
       { "sector": "Construction", "size": 4.5 },
@@ -184,23 +185,46 @@ var chartData = {
       { "sector": "Finance, real estate and business services", "size": 26.5 } ]
   };
   
+$.get('/api/interestGroups', function(data){
+ 
+  
+ 
+  console.log(data);
+  //  
+  var chartData = {'2018': []}
+  for(var i = 0; i < data.length; i++){
+    var obj = {
+      "sector" : data[i].interest_group,
+      "size" : data[i].total_donated,
+      //"Republican Percent" : data[i].repPCT 
+      
+    }
+    chartData['2018'].push(obj)
+  }
+  
+  makeChart(chartData);
+});
+
+
   
   /**
    * Create the chart
    */
-  var currentYear = 1995;
+  function makeChart(chartData) {
+  var currentYear = 2018;
   var chart = AmCharts.makeChart( "chartdivall", {
     "type": "pie",
     "theme": "light",
     "dataProvider": [],
     "valueField": "size",
     "titleField": "sector",
+    //"valueField1": "Republican Percent",
     "startDuration": 0,
     "innerRadius": 80,
     "pullOutRadius": 20,
     "marginTop": 30,
     "titles": [{
-      "text": "South African Economy"
+      "text": "Top 10 Spending by Lobbyist Group"
     }],
     "allLabels": [{
       "y": "54%",
@@ -224,8 +248,8 @@ var chartData = {
         function getCurrentData() {
           var data = chartData[currentYear];
           currentYear++;
-          if (currentYear > 2014)
-            currentYear = 1995;
+          if (currentYear > 2018)
+            currentYear = 2000;
           return data;
         }
   
@@ -247,3 +271,4 @@ var chartData = {
      "enabled": true
     }
   } );
+};

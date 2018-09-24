@@ -5,8 +5,9 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const bodyParser = require("body-parser");
+const path = require('path');
 
-
+app.use(express.static(path.join(__dirname,"/public")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const exphbs = require("express-handlebars");
@@ -17,7 +18,7 @@ app.set("view engine", "handlebars");
 var db = require("./models");
 
 require("./routes/apiRoutes.js")(app);
-//require("./routes/htmlRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
