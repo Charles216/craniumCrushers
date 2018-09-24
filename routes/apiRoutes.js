@@ -12,7 +12,7 @@ module.exports = function (app) {
   });
 
   var db = require("../models");
-  
+
   // GET route for getting all of the interest groups
   app.get("/api/interestGroups", function (req, res) {
     // findAll returns all entries for a table when used with no options
@@ -71,7 +71,7 @@ module.exports = function (app) {
 
 var data = [];
 function callFecApi() {
-  var queryURL = "https://api.open.fec.gov/v1/schedules/schedule_e/by_candidate/?cycle=2016&page=" + pageNum + "&per_page=100&api_key=" + fec_api_key;
+  var queryURL = "https://api.open.fec.gov/v1/schedules/schedule_e/by_candidate/?cycle=2016&page=" + pageNum + "&per_page=100&api_key=" + FEC_key;
   request(queryURL, function (error, response, body) {
     if (!error) {
       //console.log(JSON.parse(body));
