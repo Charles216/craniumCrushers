@@ -7,11 +7,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const exphbs = require("express-handlebars");
 
+
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //require("./routes/apiRoutes.js")(app);
 //require("./routes/htmlRoutes.js")(app);
+
+app.use(express.static("public"));
+require("./routes/apiRoutes.js")(app);
+require("./routes/htmlRoutes.js")(app)
 
 app.listen(PORT, function () {
     console.log("🌎 DO I LOVE " + PORT + " OR WHAT?!?🌎");
