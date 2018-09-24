@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const exphbs = require("express-handlebars");
 
+
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 app.use(express.static("public"));
@@ -31,5 +32,4 @@ db.sequelize.sync().then(function () {
     console.log("🙌   OMG WE ARE CONNECTED TO PORT " + PORT + "! TIME TO FOLLW THAT 💸  💸  💸  !!!");
   });
 });
-
 
