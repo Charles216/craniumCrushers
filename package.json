@@ -2,7 +2,7 @@
   "name": "craniumCrushers",
   "version": "1.0.0",
   "description": "Campaign Query has been created as a group project as part of the Northwestern Web Dev Bootcamp.  Contributing developers are Amy Moretti, Bobbi Rose, Charlie Grogan, and Joe Plukarski.",
-  "main": "keys.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
