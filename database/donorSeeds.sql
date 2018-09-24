@@ -620,3 +620,208 @@ where id = 9;
 update cycle2010s
 set display_name = "Deal"
 where id = 10;
+
+-- updates add weight
+update cycle2018s
+set weight = 10
+where id = 1;
+
+update cycle2018s
+set weight = 9
+where id = 2;
+
+update cycle2018s
+set weight = 8
+where id = 3;
+
+update cycle2018s
+set weight = 7
+where id = 4;
+
+update cycle2018s
+set weight = 6
+where id = 5;
+
+update cycle2018s
+set weight = 5
+where id = 6;
+
+update cycle2018s
+set weight = 4
+where id = 7;
+
+update cycle2018s
+set weight = 3
+where id = 8;
+
+update cycle2018s
+set weight = 2
+where id = 9;
+
+update cycle2018s
+set weight = 1
+where id = 10;
+
+-- display names for cycle2016s
+update cycle2016s
+set weight = 10
+where id = 1;
+
+update cycle2016s
+set weight = 9
+where id = 2;
+
+update cycle2016s
+set weight = 8
+where id = 3;
+
+update cycle2016s
+set weight = 7
+where id = 4;
+
+update cycle2016s
+set weight = 6
+where id = 5;
+
+update cycle2016s
+set weight = 5
+where id = 6;
+
+update cycle2016s
+set weight = 4
+where id = 7;
+
+update cycle2016s
+set weight = 3
+where id = 8;
+
+update cycle2016s
+set weight = 2
+where id = 9;
+
+update cycle2016s
+set weight = 1
+where id = 10;
+
+-- display names for cycle 2014
+update cycle2014s
+set weight = 10
+where id = 1;
+
+update cycle2014s
+set weight = 9
+where id = 2;
+
+update cycle2014s
+set weight = 8
+where id = 3;
+
+update cycle2014s
+set weight = 7
+where id = 4;
+
+update cycle2014s
+set weight = 6
+where id = 5;
+
+update cycle2014s
+set weight = 5
+where id = 6;
+
+update cycle2014s
+set weight = 4
+where id = 7;
+
+update cycle2014s
+set weight = 3
+where id = 8;
+
+update cycle2014s
+set weight = 2
+where id = 9;
+
+update cycle2014s
+set weight = 1
+where id = 10;
+
+-- display names for cycle2012s
+update cycle2012s
+set weight = 10
+where id = 1;
+
+update cycle2012s
+set weight = 9
+where id = 2;
+
+update cycle2012s
+set weight = 8
+where id = 3;
+
+update cycle2012s
+set weight = 7
+where id = 4;
+
+update cycle2012s
+set weight = 6
+where id = 5;
+
+update cycle2012s
+set weight = 5
+where id = 6;
+
+update cycle2012s
+set weight = 4
+where id = 7;
+
+update cycle2012s
+set weight = 3
+where id = 8;
+
+update cycle2012s
+set weight = 2
+where id = 9;
+
+update cycle2012s
+set weight = 1
+where id = 10;
+
+-- display names for cycle2010s
+update cycle2010s
+set weight = 10
+where id = 1;
+
+update cycle2010s
+set weight = 9
+where id = 2;
+
+update cycle2010s
+set weight = 8
+where id = 3;
+
+update cycle2010s
+set weight = 7
+where id = 4;
+
+update cycle2010s
+set weight = 6
+where id = 5;
+
+update cycle2010s
+set weight = 5
+where id = 6;
+
+update cycle2010s
+set weight = 4
+where id = 7;
+
+update cycle2010s
+set weight = 3
+where id = 8;
+
+update cycle2010s
+set weight = 2
+where id = 9;
+
+update cycle2010s
+set weight = 1
+where id = 10;

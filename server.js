@@ -28,6 +28,12 @@ require("./routes/blog-api-routes.js")(app);
 require("./routes/blog-html-routes.js")(app);
 
 
+//requiring routes for individual donors
+require("./routes/individual-api-routes.js")(app);
+require("./routes/individual-html-routes.js")(app);
+
+
+
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync().then(function () {

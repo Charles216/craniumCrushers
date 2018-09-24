@@ -174,3 +174,34 @@ label {
     border-radius: 15px;
     height: 25px;
 }
+
+/* styles for individual charts */
+#cycle2018 {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto
+  }
+
+  #cycle2016 {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto
+  }
+
+  #cycle2014 {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto
+  }
+
+  #cycle2012 {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto
+  }
+
+  #cycle2010 {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto
+  }
