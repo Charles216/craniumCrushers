@@ -97,12 +97,12 @@ $.get("/api/data", function (data) {
     }
 
     $(".candidate-choice").on("click", function (event) {
-        var supportPieData = []
+        var supportPieData = [];
+        var opposePieData = [];
         event.preventDefault();
         console.log("Committee Spending in Support of: " + this.id)
         for (i = 0; i < byCandidate.length; i++) {
             for (index = 0; index < byCandidate[i].contributions.length; index++) {
-
                 if (this.id === byCandidate[i].candidate && byCandidate[i].contributions[index].SupportOppose === "S") {
                     console.log(byCandidate[i].contributions[index].Committee)
                     console.log(byCandidate[i].contributions[index].Total)
@@ -111,7 +111,6 @@ $.get("/api/data", function (data) {
                         { name: byCandidate[i].contributions[index].Committee, y: byCandidate[i].contributions[index].Total },
 
                     )
-
                     Highcharts.chart('container', {
                         chart: {
                             plotBackgroundColor: null,
@@ -123,7 +122,7 @@ $.get("/api/data", function (data) {
                             text: "Committee Spending in Support of: " + this.id
                         },
                         tooltip: {
-                            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                            pointFormat: '{series.name}: <b>${point.y:.1f}</b>'
                         },
                         plotOptions: {
                             pie: {
@@ -131,7 +130,7 @@ $.get("/api/data", function (data) {
                                 cursor: 'pointer',
                                 dataLabels: {
                                     enabled: true,
-                                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                    format: '<b>{point.name}</b>: ${point.y:.1f}',
                                     style: {
                                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                                     }
@@ -145,6 +144,42 @@ $.get("/api/data", function (data) {
                         }]
                     });
                     // End pie chart code
+                } else if (this.id === byCandidate[i].candidate && byCandidate[i].contributions[index].SupportOppose === "O") {
+                    opposePieData.push(
+                        { name: byCandidate[i].contributions[index].Committee, y: byCandidate[i].contributions[index].Total },
+                    )
+                    Highcharts.chart('container2', {
+                        chart: {
+                            plotBackgroundColor: null,
+                            plotBorderWidth: null,
+                            plotShadow: false,
+                            type: 'pie'
+                        },
+                        title: {
+                            text: "Committee Spending in Opposition of: " + this.id
+                        },
+                        tooltip: {
+                            pointFormat: '{series.name}: <b>${point.y:.1f}</b>'
+                        },
+                        plotOptions: {
+                            pie: {
+                                allowPointSelect: true,
+                                cursor: 'pointer',
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '<b>{point.name}</b>: ${point.y:.1f}',
+                                    style: {
+                                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                    }
+                                }
+                            }
+                        },
+                        series: [{
+                            name: 'Brands',
+                            colorByPoint: true,
+                            data: opposePieData
+                        }]
+                    });
                 }
 
             }
