@@ -28,6 +28,10 @@ module.exports = function (sequelize, DataTypes) {
         percent_to_reps: {
             type: DataTypes.INTEGER,
             allowNUll: false
+        },
+        weight: {
+            type: DataTypes.INTEGER,
+            allowNUll: false
         }
     });
     return Cycle2016;

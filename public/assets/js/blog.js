@@ -1,9 +1,9 @@
 $(document).ready(function () {
     // blogContainer holds all of our posts
     var blogContainer = $(".blog-container");
-    // Click events for the edit and delete buttons
-    $(document).on("click", "button.delete", handlePostDelete);
+    // Click events for the edit buttons
     $(document).on("click", "button.edit", handlePostEdit);
+
     var posts;
 
     // This function grabs posts from the database and updates the view
