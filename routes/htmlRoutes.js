@@ -1,7 +1,7 @@
 var path = require("path");
 
 module.exports = function (app) {
-    app.get("/independantspending", function (req, res) {
+    app.get("/independentspending", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/superpacpage.html"))
     })
 
